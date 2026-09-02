@@ -1,7 +1,4 @@
-#
-# Please see this video for details:
-# https://www.youtube.com/watch?v=yl8vPW5hydQ
-#
+# 
 code = bytearray([
   0xa9, 0xff,         # lda #$ff
   0x8d, 0x02, 0x60,   # sta $6002
