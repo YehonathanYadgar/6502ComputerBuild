@@ -13,7 +13,6 @@ A pin in the CPU that indicates if it wants to read or write data through the da
 The data bus is used to write or read the data through its I/O pins.
 
 ## The CPU Loops repeatedly in a 3 step cycle:
-
 1. Places the address it wants to access on the address bus.
 2. Uses the read/write signal to indicate whether it wants to read or write.
 3. Reads data from, or writes data to, the data bus.
