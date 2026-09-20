@@ -1,14 +1,14 @@
 # 6502 Computer Build
 
-![Finished 6502 computer placeholder](Imgs/finished-placeholder.svg)
+![Finished 6502 breadboard computer](Imgs/finished-computer.jpeg)
 
-This repository documents my personal Ben Eater-style 6502 breadboard computer build. The target final state is the computer shown through part 7 of the 6502 video series, with code, datasheets, notes, and progress media kept together as the project develops.
+This repository documents my personal Ben Eater-style 6502 breadboard computer build. The build is finished through Part 7 of the 6502 video series, with code, datasheets, notes, and progress media documenting the journey.
 
 ## Current Status
 
-- Target: Ben Eater 6502 computer through part 7.
-- Working so far: EEPROM, W65C22 VIA, and HD44780 LCD output.
-- Current focus: connecting and debugging RAM behavior.
+- Status: **Finished**.
+- Completed: Ben Eater 6502 computer through **Part 7**.
+- EEPROM, RAM, W65C22 VIA, and HD44780 LCD output are ready.
 
 ## Hardware
 
@@ -25,6 +25,22 @@ This repository documents my personal Ben Eater-style 6502 breadboard computer b
 - `docs/` - datasheets for the CPU, VIA, EEPROM, RAM, LCD, and support chips.
 - `notes/` - project goals, architecture notes, computer fundamentals, and remaining work.
 - `Imgs/` - build photos and progress videos.
+
+## Build Photos
+
+Earlier stages of the build, leading up to the finished computer shown above.
+
+![Early breadboard setup](Imgs/img1.jpeg)
+
+![Initial CPU wiring](Imgs/img2.jpeg)
+
+![Expanded breadboard wiring](Imgs/img3.jpeg)
+
+![LED output stage](Imgs/img4.jpeg)
+
+![LCD wiring stage](Imgs/img5.jpeg)
+
+The unedited photos are preserved in [`Imgs/originals/`](Imgs/originals/).
 
 ## Useful Commands
 
