@@ -21,7 +21,7 @@ This repository documents my personal Ben Eater-style 6502 breadboard computer b
 
 ## Repository Layout
 
-- `code/` - 6502 assembly examples, Arduino monitor sketches, ROM-generation scripts, and ROM binaries.
+- `code/` - build code in three groups: `machine_code/` (hand-written opcodes and ROM images), `assembly/` (6502 assembly source), and `debug/` (Arduino monitor sketches).
 - `docs/` - datasheets for the CPU, VIA, EEPROM, RAM, LCD, and support chips.
 - `notes/` - project goals, architecture notes, computer fundamentals, and remaining work.
 - `Imgs/` - build photos and progress videos.
@@ -31,16 +31,16 @@ This repository documents my personal Ben Eater-style 6502 breadboard computer b
 Regenerate the early ROM image:
 
 ```bash
-cd code && python3 rom1.py
+python3 code/machine_code/dancing_led_assembly.py
 ```
 
 Assemble a 6502 program with the Ben Eater toolchain:
 
 ```bash
-vasm6502_oldstyle -Fbin -dotdir code/program1.s -o code/program1.bin
+vasm6502_oldstyle -Fbin -dotdir code/assembly/via_led_rotate.s -o code/assembly/via_led_rotate.bin
 ```
 
-Open `code/monitor1.ino` in the Arduino IDE, or upload it with `arduino-cli`, to monitor the address and data buses.
+Open `code/debug/address_bus_monitor.ino` in the Arduino IDE, or upload it with `arduino-cli`, to monitor the address and data buses. Use `code/debug/ram_debug_monitor.ino` when checking RAM and EEPROM control signals.
 
 ## Documentation
 

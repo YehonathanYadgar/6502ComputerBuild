@@ -43,7 +43,7 @@ After reset, the CPU reads two bytes:
 
 In the current programs, the reset vector points to `$8000`, so execution starts in EEPROM at the label `reset`.
 
-Example from `code/program3.s`:
+Example from `code/assembly/hello_world_short_version.s`:
 
 ```asm
 .org $8000
@@ -131,4 +131,3 @@ When the system fails:
 - Which address ranges mirror RAM, VIA, or EEPROM?
 - Is the current RAM bug caused by address wiring, data wiring, or chip select logic?
 - Which photos or diagrams should be linked here to document the final wiring?
-

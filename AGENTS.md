@@ -4,7 +4,7 @@
 
 This repository documents a personal 6502 breadboard computer build. Target final state: part 7 of Ben Eater's 6502 video series. Preserve the learning trail by explaining low-level behavior, wiring decisions, and debugging notes, not just final results.
 
-- `code/` contains staged 6502 assembly examples, Arduino monitor sketches, ROM-generation scripts, and ROM binaries.
+- `code/` contains the staged build code, split into `machine_code/` (hand-written opcodes and ROM images), `assembly/` (6502 assembly source), and `debug/` (Arduino monitor sketches).
 - `docs/` contains datasheets for the CPU, VIA, EEPROM, RAM, LCD, and support chips.
 - `notes/` contains architecture notes, `project_goals`, learning notes, and progress logs. Update these when hardware behavior or understanding changes.
 - `Imgs/` contains build photos and videos. Add progress evidence when it clarifies wiring, bugs, or milestones.
@@ -13,13 +13,13 @@ This repository documents a personal 6502 breadboard computer build. Target fina
 
 There is no project-wide build system. Use the relevant tool for the file being changed.
 
-- `cd code && python3 rom1.py` regenerates the ROM image. Check the output filename before committing binaries.
-- `vasm6502_oldstyle -Fbin -dotdir code/program1.s -o code/program1.bin` assembles a 6502 program when the Ben Eater toolchain is installed.
-- Open `code/monitor1.ino` in the Arduino IDE, or upload with `arduino-cli`, to monitor the address and data buses.
+- `python3 code/machine_code/dancing_led_assembly.py` regenerates `code/machine_code/led_test_rom.bin`. Check the output filename before committing binaries.
+- `vasm6502_oldstyle -Fbin -dotdir code/assembly/via_led_rotate.s -o code/assembly/via_led_rotate.bin` assembles a 6502 program when the Ben Eater toolchain is installed.
+- Open `code/debug/address_bus_monitor.ino` in the Arduino IDE, or upload with `arduino-cli`, to monitor the address and data buses.
 
 ## Coding Style & Naming Conventions
 
-Match the existing examples. Use two-space indentation in Python, Arduino, and assembly. Keep 6502 labels lowercase and descriptive. Use uppercase names for registers and bit masks, such as `PORTB`, `DDRA`, `RS`, and `E`. For tutorial-derived files, continue the numbered pattern (`program4.s`, `monitor2.ino`) and document the source/video stage in `code/README.md`.
+Match the existing examples. Use two-space indentation in Python, Arduino, and assembly. Keep 6502 labels lowercase and descriptive. Use uppercase names for registers and bit masks, such as `PORTB`, `DDRA`, `RS`, and `E`. Prefer descriptive code filenames, such as `hello_world_short_version.s`, place each file in the matching `code/` subfolder, and document the source/video stage in `code/README.md`.
 
 ## Testing Guidelines
 

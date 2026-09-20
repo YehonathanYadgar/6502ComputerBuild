@@ -1,5 +1,9 @@
+// Arduino bus monitor from the first 6502 build stage.
+// It samples the address bus, data bus, and R/W line on each clock edge.
+
 const char ADDR[] = {22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52};
 const char DATA[] = {39, 41, 43, 45, 47, 49, 51, 53};
+
 #define CLOCK 2
 #define READ_WRITE 3
 
@@ -14,7 +18,7 @@ void setup() {
   pinMode(READ_WRITE, INPUT);
 
   attachInterrupt(digitalPinToInterrupt(CLOCK), onClock, RISING);
-  
+
   Serial.begin(57600);
 }
 
@@ -27,9 +31,9 @@ void onClock() {
     Serial.print(bit);
     address = (address << 1) + bit;
   }
-  
+
   Serial.print("   ");
-  
+
   unsigned int data = 0;
   for (int n = 0; n < 8; n += 1) {
     int bit = digitalRead(DATA[n]) ? 1 : 0;
@@ -38,7 +42,7 @@ void onClock() {
   }
 
   sprintf(output, "   %04x  %c %02x", address, digitalRead(READ_WRITE) ? 'r' : 'W', data);
-  Serial.println(output);  
+  Serial.println(output);
 }
 
 void loop() {
