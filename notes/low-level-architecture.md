@@ -6,7 +6,7 @@ This file describes this specific 6502 computer, not computer concepts in genera
 
 The target system is the Ben Eater 6502 computer through part 7: W65C02S CPU, AT28C256 EEPROM, HM62256 RAM, W65C22 VIA, HD44780 LCD, and 74HC00 NAND gates for address decoding.
 
-Current status: EEPROM, VIA, and LCD have worked before. RAM is being connected/debugged. Update this section whenever the verified hardware state changes.
+Current status: Complete.
 
 ## Main Buses And Shared Signals
 
