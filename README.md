@@ -1,5 +1,7 @@
 # 6502 Computer Build
 
+Sorry for the quality of the images and videos! I didn’t know I was going to upload this project to GitHub—they were originally just for me to keep track of my progress.
+
 ![Finished 6502 breadboard computer](Imgs/finished-computer.jpeg)
 
 This repository documents my personal Ben Eater-style 6502 breadboard computer build. The build is finished through Part 7 of the 6502 video series, with code, datasheets, notes, and progress media documenting the journey.
