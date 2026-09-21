@@ -49,7 +49,3 @@ Earlier stages of the build, leading up to the finished computer shown above.
 - [Project goals](notes/project_goals.md)
 - [Low-level architecture](notes/low-level-architecture.md)
 - [Computer fundamentals](notes/how_6502_works.md)
-
-## Validation
-
-There is no automated test suite. Changes are checked by rebuilding ROM binaries, verifying reset vectors and memory addresses, and testing behavior on the breadboard with the Arduino monitor or direct hardware observation.
