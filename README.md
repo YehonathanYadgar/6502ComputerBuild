@@ -6,7 +6,7 @@ Sorry for the quality of the images and videos! I didn’t know I was going to u
   <a href="Imgs/finished-computer.jpeg"><img src="Imgs/finished-computer.jpeg" alt="Finished 6502 breadboard computer" width="500"></a>
 </p>
 
-[Watch the final full-build Hello World demo (6× speed, no audio)](Imgs/final-full-build-hello-world-6x.mp4).
+[Watch the final full-build Hello World demo](Imgs/final-full-build-hello-world-6x.mp4).
 
 This repository documents my personal Ben Eater-style 6502 breadboard computer build. The build is finished through Part 7 of the 6502 video series, with code, datasheets, notes, and progress media documenting the journey.
 
