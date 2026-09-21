@@ -2,6 +2,8 @@
 
 These are byte-for-byte copies preserved before photo cleanup on 2026-09-20.
 
+The photos in this folder are stored locally and ignored by Git. They are not included in new clones; only this README is tracked.
+
 - `img1.jpeg` through `img5.jpeg`: original repository photos.
 - `finished-computer.png`: first uploaded photo of the completed build.
 

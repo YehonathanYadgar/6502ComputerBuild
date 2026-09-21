@@ -1,2 +1,6 @@
 .DS_Store
 __pycache__/
+
+# Keep unedited build photos local.
+/Imgs/originals/*
+!/Imgs/originals/README.md
