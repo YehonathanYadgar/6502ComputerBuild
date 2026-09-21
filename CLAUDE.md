@@ -54,7 +54,7 @@ LCD control lines live on `PORTA`: `E = %10000000`, `RW = %01000000`, `RS = %001
 
 `ram_debug_monitor.ino` is the tool for this: the Arduino drives PHI2 manually (`p` = one pulse, `t` = ten, `rc` = run, `x` = stop, `s` = status) and prints the data bus alongside `/CE`, RAM `/CS` `/WE` `/OE`, `A15`, and CPU R/W. Its `RW_WE_MATCH` column is the point — it should always read `YES`.
 
-## Code stages
+## Code
 
 `code/` is split by the form the code takes, which tracks the build's progression:
 
@@ -62,7 +62,7 @@ LCD control lines live on `PORTA`: `E = %10000000`, `RW = %01000000`, `RS = %001
 - `assembly/` - `.s` sources assembled with `vasm`. `program1.s` (literal addresses) then `via_led_rotate.s` (named constants) are the same program; the two `hello_world_*` files are the no-RAM and stack-based LCD versions.
 - `debug/` - the Arduino sketches. Not part of the 6502 program; they observe it.
 
-`code/README.md` maps each file to its Ben Eater video stage and original download link; keep that table current when adding a file, and put the file in the subfolder matching its form.
+The `code/` folder contains the machine-code, assembly, and debugging files. Put new files in the subfolder matching their form.
 
 Two stale references survive in the docs and point at files that were deleted, not renamed: `notes/To_finish.md` (linked from `README.md`) and `notes/progress_logs.md` (cited in `AGENTS.md`). Either write those notes or drop the links. Also note `notes/computer_fundamentals.md.md` really does carry a doubled extension.
 
