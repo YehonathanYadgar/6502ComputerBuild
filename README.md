@@ -2,7 +2,9 @@
 
 Sorry for the quality of the images and videos! I didn’t know I was going to upload this project to GitHub—they were originally just for me to keep track of my progress.
 
-![Finished 6502 breadboard computer](Imgs/finished-computer.jpeg)
+<p align="center">
+  <a href="Imgs/finished-computer.jpeg"><img src="Imgs/finished-computer.jpeg" alt="Finished 6502 breadboard computer" width="500"></a>
+</p>
 
 [Watch the final full-build Hello World demo (6× speed, no audio)](Imgs/final-full-build-hello-world-6x.mp4).
 
@@ -33,15 +35,35 @@ This repository documents my personal Ben Eater-style 6502 breadboard computer b
 
 Earlier stages of the build, leading up to the finished computer shown above.
 
-![Early breadboard setup](Imgs/img1.jpeg)
+<p align="center">
+  <a href="Imgs/img1.jpeg"><img src="Imgs/img1.jpeg" alt="Early breadboard setup" width="500"></a>
+  <br>
+  <em>Early breadboard setup</em>
+</p>
 
-![Initial CPU wiring](Imgs/img2.jpeg)
+<p align="center">
+  <a href="Imgs/img2.jpeg"><img src="Imgs/img2.jpeg" alt="Initial CPU wiring" width="500"></a>
+  <br>
+  <em>Initial CPU wiring</em>
+</p>
 
-![Expanded breadboard wiring](Imgs/img3.jpeg)
+<p align="center">
+  <a href="Imgs/img3.jpeg"><img src="Imgs/img3.jpeg" alt="Expanded breadboard wiring" width="500"></a>
+  <br>
+  <em>Expanded breadboard wiring</em>
+</p>
 
-![LED output stage](Imgs/img4.jpeg)
+<p align="center">
+  <a href="Imgs/img4.jpeg"><img src="Imgs/img4.jpeg" alt="LED output stage" width="500"></a>
+  <br>
+  <em>LED output stage</em>
+</p>
 
-![LCD wiring stage](Imgs/img5.jpeg)
+<p align="center">
+  <a href="Imgs/img5.jpeg"><img src="Imgs/img5.jpeg" alt="LCD wiring stage" width="500"></a>
+  <br>
+  <em>LCD wiring stage</em>
+</p>
 
 ## Documentation
 
