@@ -44,8 +44,7 @@ Earlier stages of the build, leading up to the finished computer shown above.
 - [Code stages](code/README.md)
 - [Project goals](notes/project_goals.md)
 - [Low-level architecture](notes/low-level-architecture.md)
-- [Computer fundamentals](notes/computer_fundamentals.md.md)
-- [Remaining work](notes/To_finish.md)
+- [Computer fundamentals](notes/how_6502_works.md)
 
 ## Validation
 

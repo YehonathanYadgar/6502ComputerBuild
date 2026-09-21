@@ -25,8 +25,8 @@ python3 code/machine_code/dancing_led_assembly.py
 
 | File | Purpose | Source video | Original link |
 | --- | --- | --- | --- |
-| `program1.s` | First pass at the rotating LED pattern, written against literal addresses. | Part 3: Assembly language vs. machine code | Local first draft |
-| `via_led_rotate.s` | Rotates an LED pattern through VIA `PORTB`, using named constants. | Part 3: Assembly language vs. machine code | https://eater.net/downloads/blink.s |
+| [`../program1.s`](program1.s) | First pass at the rotating LED pattern, stored directly in `code/`. | Part 3: Assembly language vs. machine code | Local first draft |
+| [`via_led_rotate.s`](assembly/via_led_rotate.s) | Original LED rotation program; writes to VIA `PORTB` at `$6000` and `DDRB` at `$6002`. | Part 3: Assembly language vs. machine code | https://eater.net/downloads/blink.s |
 | `hello_world_long_version.s` | Prints to the LCD with inline enable pulses. Needs no RAM. | Part 4: Connecting an LCD to our computer | https://eater.net/downloads/hello-world.s |
 | `hello_world_short_version.s` | Prints to the LCD using subroutines, the stack, and LCD busy-flag polling. Needs working RAM. | Early-series final hello-world assembly with stack/subroutines | https://eater.net/downloads/hello-world-final.s |
 
