@@ -45,7 +45,7 @@ Earlier stages of the build, leading up to the finished computer shown above.
 
 ## Documentation
 
-- [Code stages](code/README.md)
+- [Code folder](code/)
 - [Project goals](notes/project_goals.md)
 - [Low-level architecture](notes/low-level-architecture.md)
 - [Computer fundamentals](notes/how_6502_works.md)
